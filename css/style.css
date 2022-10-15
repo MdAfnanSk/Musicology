@@ -1,0 +1,556 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Oswald:wght@200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul,
+li {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --hover: #e8631c;
+    --ows: 'Oswald', sans-serif;
+    --monta: 'Montserrat', sans-serif;
+    --black: #303030;
+}
+
+
+/*====================================
+            common css end
+====================================*/
+/*====================================
+            manu part start
+====================================*/
+.main_manu {
+    background: #303030;
+    height: 100px;
+    line-height: 100px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.main_manu ul li a {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    margin: 0 17px;
+    transition: all linear .3s;
+}
+
+.main_manu ul li a:hover {
+    color: var(--hover);
+}
+
+.main_manu .search i {
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.main_manu ul li .active {
+    color: var(--hover);
+}
+
+/*====================================
+            manu part end
+====================================*/
+/*====================================
+            banner part start
+====================================*/
+#banner {
+    padding: 250px 0 85px;
+    position: relative;
+    z-index: 1;
+}
+
+#banner::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.50);
+    z-index: -1;
+}
+
+.banner_text h1 {
+    font-size: 70px;
+    font-weight: 600;
+    color: #fff;
+    font-family: var(--ows);
+}
+
+.banner_text p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    padding-right: 150px;
+    line-height: 24px;
+    padding-top: 25px;
+}
+
+.banner_text a {
+    padding: 10px 50px;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: var(--ows);
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 40px;
+    border: 1px solid #fff;
+    transition: all linear .3s;
+}
+
+.banner_text a:hover {
+    background: var(--hover);
+    border-color: var(--hover);
+}
+
+/*====================================
+            banner part end
+====================================*/
+/*====================================
+            ture part start
+====================================*/
+#dance_ture {
+    background: var(--hover);
+    position: relative;
+    padding: 90px 0 100px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+#dance_ture::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: -45%;
+    width: 100%;
+    height: 100%;
+    background: url(../images/shape.png) no-repeat;
+    z-index: -1;
+
+}
+
+.dance_ture_col {
+    margin-top: 75px;
+}
+
+.common_head h3 {
+    font-size: 60px;
+    font-weight: 700;
+    color: #fff;
+    font-family: var(--ows);
+    text-transform: uppercase;
+}
+
+.common_head p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    font-family: var(--monta);
+    width: 40%;
+    margin: 0 auto;
+    line-height: 24px;
+    padding-top: 50px;
+}
+
+.dance_text {
+    background: #303030;
+}
+
+.dance_text h3 {
+    font-size: 25px;
+    font-weight: 400;
+    color: #fff;
+    font-family: var(--ows);
+    text-transform: uppercase;
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+
+.dance_text p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    font-family: var(--monta);
+    line-height: 20px;
+    padding: 0 30px 30px;
+}
+
+/*====================================
+            ture part end
+====================================*/
+/*====================================
+        pricing part start
+====================================*/
+#pricing {
+    background: var(--black);
+    padding: 100px 0 100px;
+    position: relative;
+    z-index: 1;
+}
+
+#pricing::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/shape\(2\).png) no-repeat;
+    z-index: -1;
+}
+
+.pricing_col {
+    background: var(--hover);
+    padding: 20px 0 25px;
+    border-radius: 10px;
+    margin-top: 75px;
+}
+
+.pricing_col .icon {
+    font-size: 130px;
+    color: #fff;
+}
+
+.pricing_text h3 {
+    font-size: 25px;
+    font-weight: 600;
+    color: #fff;
+    font-family: var(--ows);
+    text-transform: uppercase;
+}
+
+.pricing_text p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    font-family: var(--monta);
+    line-height: 20px;
+    padding: 0 25px;
+    padding-top: 30px;
+}
+
+.pricing_text a {
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    font-family: var(--ows);
+    padding: 15px 0;
+    text-transform: uppercase;
+    background: var(--black);
+    display: block;
+    margin: 25px 30px 0;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+/*====================================
+        pricing part end
+====================================*/
+/*====================================
+        amazing part start
+====================================*/
+#amazing,
+#best {
+    background: var(--black);
+}
+
+.first_col {
+    padding-right: 0;
+}
+
+.second_col {
+    padding-left: 0;
+}
+
+.amazing_text {
+    padding-top: 280px;
+    height: 100%;
+    padding-left: 80px;
+    padding-right: 60px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.amazing_text::after {
+    position: absolute;
+    content: '';
+    bottom: -45%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/shape\(3\).png) no-repeat;
+    z-index: -1;
+
+}
+
+.amazing_text h3 {
+    font-size: 50px;
+    font-weight: 700;
+    color: #fff;
+    font-family: var(--ows);
+    text-transform: uppercase;
+}
+
+.amazing_text p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    font-family: var(--monta);
+    line-height: 24px;
+    padding-top: 50px;
+}
+
+.amazing_text a {
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    font-family: var(--ows);
+    padding-top: 50px;
+    text-transform: uppercase;
+    padding: 10px 100px;
+    background: var(--black);
+    margin-top: 60px;
+    border-radius: 5px;
+}
+
+/*====================================
+        amazing part end
+====================================*/
+/*====================================
+        statistics part start
+====================================*/
+#statistics {
+    background: var(--black);
+    padding: 100px 0;
+}
+
+.statistics_col {
+    padding-top: 50px;
+}
+
+.statistics_col h3 {
+    font-size: 50px;
+    font-weight: 700;
+    color: #fff;
+    font-family: var(--ows);
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.statistics_col span {
+    font-size: 50px;
+    font-weight: 700;
+    color: #fff;
+    font-family: var(--ows);
+}
+
+.statistics_col p {
+    font-size: 30px;
+    font-weight: 400;
+    color: #fff;
+    font-family: var(--monta);
+}
+
+/*====================================
+        statistics part end
+====================================*/
+/*====================================
+        bottom banner part start
+====================================*/
+#bottom_banner {
+    padding: 330px 0;
+    position: relative;
+    z-index: 1;
+}
+
+#bottom_banner::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    background: rgba(232, 99, 28, 0.60);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+#bottom_banner::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.50);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.bottom_banner_text p {
+    font-size: 25px;
+    font-weight: 400;
+    color: #fff;
+    font-family: var(--monta);
+    line-height: 30px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.bottom_banner_text h3 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #fff;
+    font-family: var(--ows);
+    text-transform: uppercase;
+    padding-top: 20px;
+}
+
+/*====================================
+        bottom banner part end
+====================================*/
+/*====================================
+        subsceibe part start
+====================================*/
+#subscribe {
+    background: var(--hover);
+    padding: 100px 0;
+}
+
+.subscribe_main {
+    padding-top: 20px;
+}
+
+.subscribe_main form #email {
+    width: 350px;
+    height: 50px;
+    border: 0;
+    padding-left: 20px;
+    margin-right: -5px;
+    font-size: 14px;
+    font-family: var(--monta);
+}
+
+.subscribe_main form #email:hover {
+    outline: 0;
+}
+
+.subscribe_main form button {
+    width: 150px;
+    height: 50px;
+    border: 0;
+    background: var(--black);
+    font-size: 14px;
+    font-weight: 400;
+    font-family: var(--ows);
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 50px;
+    margin-top: -10px !important;
+}
+
+/*====================================
+        subsceibe part end
+====================================*/
+/*====================================
+        footer part start
+====================================*/
+#footer {
+    padding: 110px 0 75px;
+    background: var(--black);
+}
+
+.footer_common_head h3 {
+    font-size: 25px;
+    font-weight: 400;
+    color: #fff;
+    font-family: var(--ows);
+    text-transform: uppercase;
+    padding-bottom: 30px;
+}
+
+.related_text p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    font-family: var(--monta);
+    padding-right: 9px;
+    line-height: 25px;
+}
+
+.related_text ul li a {
+    margin-right: 15px;
+}
+
+.related_text ul li a i {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #fff;
+    color: var(--black);
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    margin-top: 30px;
+    transition: all linear .3s;
+}
+
+.related_text ul li a i:hover {
+    color: var(--hover);
+}
+
+.middel_text ul li a {
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    font-family: var(--monta);
+    margin-bottom: 7px;
+    transition: all linear .3s;
+}
+
+.middel_text ul li a:hover {
+    color: var(--hover);
+}
+
+/*====================================
+        footer part end
+====================================*/
+
+.menu_fix {
+    position: fixed;
+    left: 0;
+    top: 0;
+}
